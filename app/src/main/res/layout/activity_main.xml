@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to this page"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:startIconDrawable="@drawable/baseline_person_24"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:boxCornerRadiusTopStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:startIconDrawable="@drawable/baseline_fiber_pin_24"
+             app:passwordToggleEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:textColorHint="?android:attr/colorActivatedHighlight"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <CheckBox
+         android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="give the T and C"
+        android:layout_margin="10dp"
+        android:textColor="?attr/colorButtonNormal"
+        android:textSize="15dp"
+        />
+    <Button
+         android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here"
+        android:background="@drawable/ch"
+         android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+</LinearLayout>
